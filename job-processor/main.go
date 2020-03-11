@@ -83,7 +83,7 @@ func main() {
 	handler.Handle("/metrics", prometheus.Handler())
 
 	log.Println("[INFO] starting HTTP server on port :9009")
-	log.Fatal(http.ListenAndServe(":9009", handler))
+	log.Fatal(http.ListenAndServe("0.0.0.0:9009", handler))
 }
 
 type Job struct {

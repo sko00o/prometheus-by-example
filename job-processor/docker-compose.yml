@@ -9,6 +9,6 @@ services:
   prometheus:
     image: prom/prometheus:latest
     ports:
-    - 8080:8080
+    - 9090:9090
     volumes:
     - ./prometheus.yml:/etc/prometheus/prometheus.yml
